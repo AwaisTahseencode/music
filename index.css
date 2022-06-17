@@ -1,0 +1,505 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    font-size: 62.5%;
+}
+body{
+    box-sizing: border-box;
+    font-family: "Jost",sans-serif;
+}
+html body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.music_main{
+    /* display: none; */
+    /* padding-top: 40px; */
+    position: relative;
+    /* width: 100vw;
+    height: 100vh; */
+}
+.fa-solid[name="light"]{
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+}
+.music{
+    position: relative;
+    backface-visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    margin: 2rem auto;
+    background-color: #f6f6f6;
+    /* border-radius: 12px; */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    text-align: center;
+}
+.image{
+    width: 25rem;
+    height:25rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+#image_here{
+    width: 100%;
+    border-radius:50%;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.5);
+    object-fit: cover;
+
+}
+#title{
+    padding-top: 8rem;
+    font-size:3rem;
+    text-shadow: 1px 2px 8px rgba(0,0,0,0.5) ;
+}
+#artist{
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: rgba(91, 88, 88, 0.746);
+}
+.button{
+    margin-top: 6rem;
+    display: flex;
+    gap: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.occurance{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    height: 5rem;
+    /* padding: 1rem 1rem 0 4rem; */
+    top: 2.5rem;
+    right: 0;
+    margin-bottom:0;
+    width:80px;
+    /* margin-left: 4rem; */
+}
+.occurance .fa-solid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    width: 4rem;
+    border-radius: 50%;
+    height: 4rem;
+    cursor: pointer;
+    color: #f6f6f6;
+    background-color:#111111 ;
+    filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.4));
+}
+#play{
+    width: 5rem;
+    height: 5rem;
+    background-color: #111;
+    color: #f6f6f6;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.button .fa-solid{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #111111;
+    filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.4));
+    /* text-align: center; */
+}
+.button #next{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #111111;
+    filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.4));
+    /* text-align: center; */
+}
+.music_color .occurance{
+    display: inline-block;
+}
+.music_color .fa-solid[name="light"]{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    color: white;
+    visibility: visible;
+    pointer-events: visible;
+    filter: drop-shadow(2px 5px 10px rgba(285,285,285,0.4));
+}
+
+.music_color .fa-solid[name="dark"]{
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+
+}
+.music_color {
+    background-color: #111111;
+    color: #f6f6f6;
+}
+.music_main{
+    background-color:rgba(66, 64, 64, 0.79);
+}
+.music_color #prev,#next,#play{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #f6f6f6;
+    filter: drop-shadow(1px 5px 10px rgba(285,285,285,0.4));
+    /* text-align: center; */
+}
+.music_color #next{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #f6f6f6;
+    filter: drop-shadow(1px 5px 10px rgba(285,285,285,0.4));
+    /* text-align: center; */
+}
+.music_color .fa-solid[name="dark"]{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #f6f6f6;
+    filter: drop-shadow(1px 5px 10px rgba(285,285,285,0.4));
+    /* text-align: center; */
+}
+.music_color #artist{
+    color: #eeee;
+}
+@media(max-width:61.25em){
+
+    .music_main{
+        display: inline-block;
+        /* padding-top: 40px; */
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+    .fa-solid[name="light"]{
+        display: none;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .music{
+        padding-top: 10rem;
+        position: relative;
+        backface-visibility: hidden;
+        width: 100%;
+        height: 100%;
+        margin: 2rem auto;
+        background-color: #f6f6f6;
+        border-radius: 12px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+        text-align: center;
+    }
+    .image{
+        width: 25rem;
+        height:25rem;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    #image_here{
+        width: 100%;
+        border-radius:50%;
+        box-shadow: 0 8px 8px rgba(0,0,0,0.5);
+        object-fit: cover;
+    
+    }
+    #title{
+        padding-top: 8rem;
+        font-size:3rem;
+        text-shadow: 1px 2px 8px rgba(0,0,0,0.5) ;
+    }
+    #artist{
+        padding-top: 2rem;
+        font-size: 2rem;
+        color: rgba(91, 88, 88, 0.746);
+    }
+    .button{
+        margin-top: 6rem;
+        display: flex;
+        gap: 3rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .occurance{
+        position: absolute;
+        display: flex;
+        justify-content: end;
+        height: 5rem;
+        /* padding: 1rem 1rem 0 4rem; */
+        top: 2.5rem;
+        right: 0;
+        margin-bottom:0;
+        width:80px;
+        /* margin-left: 4rem; */
+    }
+    .occurance .fa-solid{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        width: 4rem;
+        border-radius: 50%;
+        height: 4rem;
+        cursor: pointer;
+        color: #f6f6f6;
+        background-color:#111111 ;
+        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.4));
+    }
+    #play{
+        width: 5rem;
+        height: 5rem;
+        background-color: #111;
+        color: #f6f6f6;
+        border-radius: 50%;
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .button .fa-solid{
+        font-size: 2rem;
+        cursor: pointer;
+        color: #111111;
+        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.4));
+        /* text-align: center; */
+    }
+    .button #next{
+        font-size: 2rem;
+        cursor: pointer;
+        color: #111111;
+        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.4));
+        /* text-align: center; */
+    }
+    .music_color .occurance{
+        display: inline-block;
+    }
+    .music_color .fa-solid[name="light"]{
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        color: white;
+        visibility: visible;
+        pointer-events: visible;
+        filter: drop-shadow(2px 5px 10px rgba(285,285,285,0.4));
+    }
+    
+    .music_color .fa-solid[name="dark"]{
+        display: none;
+        visibility: hidden;
+        pointer-events: none;
+    
+    }
+    .music_color {
+        background-color: #111111;
+        color: #f6f6f6;
+    }
+    .music_main{
+        background-color:rgba(66, 64, 64, 0.79);
+    }
+    .music_color #prev,#next,#play{
+        font-size: 2rem;
+        cursor: pointer;
+        color: #f6f6f6;
+        filter: drop-shadow(1px 5px 10px rgba(285,285,285,0.4));
+        /* text-align: center; */
+    }
+    .music_color #next{
+        font-size: 2rem;
+        cursor: pointer;
+        color: #f6f6f6;
+        filter: drop-shadow(1px 5px 10px rgba(285,285,285,0.4));
+        /* text-align: center; */
+    }
+    .music_color .fa-solid[name="dark"]{
+        font-size: 2rem;
+        cursor: pointer;
+        color: #f6f6f6;
+        filter: drop-shadow(1px 5px 10px rgba(285,285,285,0.4));
+        /* text-align: center; */
+    }
+    .music_color #artist{
+        color: #eeee;
+    }
+}
+@media(max-width:24.68em){
+    html body{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .music_main{
+        /* display: none; */
+        /* padding-top: 40px; */
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+    .fa-solid[name="light"]{
+        display: none;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .music{
+        padding-top: 0;
+        position: relative;
+        backface-visibility: hidden;
+        width: 100vw;
+        height: 100vh;
+        /* margin: 2rem auto; */
+        background-color: #f6f6f6;
+        border-radius: 12px;
+        /* box-shadow: 5px 5px 10px rgba(0,0,0,0.5); */
+        text-align: center;
+    }
+    .image{
+        width: 25rem;
+        height:25rem;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    #image_here{
+        width: 100%;
+        border-radius:50%;
+        box-shadow: 0 8px 8px rgba(0,0,0,0.5);
+        object-fit: cover;
+    
+    }
+    #title{
+        padding-top: 8rem;
+        font-size:3rem;
+        text-shadow: 1px 2px 8px rgba(0,0,0,0.5) ;
+    }
+    #artist{
+        padding-top: 2rem;
+        font-size: 2rem;
+        color: rgba(91, 88, 88, 0.746);
+    }
+    .button{
+        margin-top: 6rem;
+        display: flex;
+        gap: 3rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .occurance{
+        position: absolute;
+        display: flex;
+        justify-content: end;
+        height: 5rem;
+        /* padding: 1rem 1rem 0 4rem; */
+        top: 2.5rem;
+        right: 0;
+        margin-bottom:0;
+        width:80px;
+        /* margin-left: 4rem; */
+    }
+    .occurance .fa-solid{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        width: 4rem;
+        border-radius: 50%;
+        height: 4rem;
+        cursor: pointer;
+        color: #f6f6f6;
+        background-color:#111111 ;
+        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.4));
+    }
+    #play{
+        width: 5rem;
+        height: 5rem;
+        background-color: #111;
+        color: #f6f6f6;
+        border-radius: 50%;
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .button .fa-solid{
+        font-size: 2rem;
+        cursor: pointer;
+        color: #111111;
+        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.4));
+        /* text-align: center; */
+    }
+    .button #next{
+        font-size: 2rem;
+        cursor: pointer;
+        color: #111111;
+        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.4));
+        /* text-align: center; */
+    }
+    .music_color .occurance{
+        display: inline-block;
+    }
+    .music_color .fa-solid[name="light"]{
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        color: white;
+        visibility: visible;
+        pointer-events: visible;
+        filter: drop-shadow(2px 5px 10px rgba(285,285,285,0.4));
+    }
+    
+    .music_color .fa-solid[name="dark"]{
+        display: none;
+        visibility: hidden;
+        pointer-events: none;
+    
+    }
+    .music_color {
+        background-color: #111111;
+        color: #f6f6f6;
+    }
+    .music_main{
+        background-color:#f6f6f6;
+    }
+    .music_color #prev,#next,#play{
+        font-size: 2rem;
+        cursor: pointer;
+        color: #f6f6f6;
+        filter: drop-shadow(1px 5px 10px rgba(285,285,285,0.4));
+        /* text-align: center; */
+    }
+    .music_color #next{
+        font-size: 2rem;
+        cursor: pointer;
+        color: #f6f6f6;
+        filter: drop-shadow(1px 5px 10px rgba(285,285,285,0.4));
+        /* text-align: center; */
+    }
+    .music_color .fa-solid[name="dark"]{
+        font-size: 2rem;
+        cursor: pointer;
+        color: #f6f6f6;
+        filter: drop-shadow(1px 5px 10px rgba(285,285,285,0.4));
+        /* text-align: center; */
+    }
+    .music_color #artist{
+        color: #eeee;
+    }
+}
+
+.anim{
+animation: rotate 3s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
+}
